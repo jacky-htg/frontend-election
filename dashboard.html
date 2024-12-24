@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Kandidat Pemilu</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Dashboard Admin</h2>
+        <ul>
+            <li><a href="#">Tambah Kandidat</a></li>
+            <li><a href="#">Daftar Kandidat</a></li>
+            <!-- <li><a href="#">Pengaturan Pemilu</a></li> -->
+            <li><a href="#">Laporan Pemilu</a></li>
+            <li><a href="#">Notifikasi</a></li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <h1>Manajemen Kandidat Pemilu basis Blockchain</h1>
+        <div class="form-container">
+            <h2>Tambah Kandidat</h2>
+            <input type="text" id="candidateName" placeholder="Nama Kandidat" required>
+            <input type="text" id="candidateParty" placeholder="Partai Kandidat" required>
+            <button id="addCandidateBtn">Tambah Kandidat</button>
+        </div>
+        <div class="candidate-list">
+            <h2>Daftar Kandidat</h2>
+            <ul id="candidateList"></ul>
+        </div>
+    </div>
+    <script src="./js/app.js"></script>
+</body>
+</html>

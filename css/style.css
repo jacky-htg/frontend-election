@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
+
 .light {
     --mainColor: #76ABAE;
     --bgColor: #F5F7F8;
@@ -268,6 +269,154 @@ header .container {
   animation: appear 1s 1 both;
 }
 
+.login-form {
+  width: 40rem;
+  height: 20rem;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--bgColor);
+  box-shadow: 0 0 20em 20em rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  border-radius: 1.5rem;
+}
+
+.login-form div{
+  width: 50%;
+  height: 100%;
+}
+.login-form img{
+  position: absolute;
+  width: 50%;
+}
+.side-right{
+  background: var(--darkOne);
+  padding: 20px;
+  border-radius: 1.5rem;
+  position: absolute;
+  right: 0;
+  box-shadow: -20px 0 50px;
+}
+.login-form form{
+  display: flex;
+  flex-direction: column;
+}
+.login-form label {
+  margin-bottom: 5px;
+  color: var(--lightOne);
+}
+
+.login-form input {
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+}
+
+.login-form button {
+  padding: 15px;
+  background-color: var(--lightOne);
+  color: var(--darkOne);
+  border: none;
+  cursor: pointer;
+  border-radius: 1rem;
+  margin:.7rem 0;
+  font-weight: bold;
+}
+
+.login-form button[type="button"] {
+  background: var(--mainColor);
+}
+
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  background-color: #333;
+  color: #fff;
+  position: fixed;
+  padding: 20px;
+}
+
+.sidebar h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sidebar ul {
+  list-style-type: none;
+}
+
+.sidebar ul li {
+  margin: 15px 0;
+}
+
+.sidebar ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+  transition: background 0.3s;
+}
+
+.sidebar ul li a:hover {
+  background-color: #575757;
+}
+
+/* Main Content */
+.main-content {
+  margin-left: 260px; /* Memberikan ruang untuk sidebar */
+  padding: 20px;
+}
+
+.main-content h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Form Styling */
+.form-container {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.form-container input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-container button {
+  padding: 10px 15px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer }
+
+.form-container button:hover {
+  background-color: #218838;
+}
+
+/* Candidate List */
+.candidate-list {
+  margin-top: 20px;
+}
+
+.candidate-list ul {
+  list-style-type: none;
+}
+
+.candidate-list li {
+  padding: 10px;
+  background-color: #e9ecef;
+  margin: 5px 0;
+  border-radius: 4px;
+}
 @keyframes appear {
   0% {
     clip-path: circle(30% at 5% 125%);
@@ -368,6 +517,21 @@ header .container {
   .shape {
     bottom: -180px;
     left: -150px;
+  }
+  .login-form{
+    width: 20rem;
+  }
+  .login-form div{
+    width: 100%;
+  }
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+  .main-content {
+      margin-left: 0;
   }
 }
 
